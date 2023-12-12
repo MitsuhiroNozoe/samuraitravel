@@ -38,7 +38,6 @@
                                  <thead>
                                      <tr>
                                          <th scope="col">ID</th>
-                                         <th scope="col">電話番号</th>
                                          <th scope="col">民宿名</th>
                                          <th scope="col">郵便番号</th>
                                          <th scope="col">住所</th>
@@ -50,7 +49,6 @@
                                  <tbody>                                                     
                                      <tr th:each="house : ${housePage}">
                                          <td th:text="${house.getId()}"></td>
-                                         <td th:text="${house.getPhoneNumber()}"></td>
                                          <td th:text="${house.getName()}"></td>
                                          <td th:text="${house.getPostalCode()}"></td>
                                          <td th:text="${house.getAddress()}"></td>

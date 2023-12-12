@@ -18,6 +18,7 @@ public class HomeController {
 	public String index(Model model) {
         List<House> newHouses = houseRepository.findTop10ByOrderByCreatedAtDesc();
         model.addAttribute("newHouses", newHouses); 
+        
         return "index";
     }   
 }
